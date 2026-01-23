@@ -1,57 +1,66 @@
 # OpenCode Agents
 
-This repository contains a collection of specialized agents for the OpenCode environment. These agents are designed to handle specific software engineering tasks with expert-level proficiency.
+This repository provides a collection of specialized agents tailored for the OpenCode ecosystem. Each agent is designed with a specific focus, enabling them to handle complex software engineering tasks with expert-level proficiency and precision.
 
 ## Agent Modes
 
-- **Agent**: Primary assistants designed for direct user interaction and high-level reasoning.
-- **Subagent**: Specialized tools typically delegated to by other agents for specific tasks.
-- **Both**: Flexible agents that can function as primary assistants or specialized subagents.
+Agents within this repository operate in three distinct modes:
+
+- **Agent**: Primary assistants designed for direct user interaction, high-level reasoning, and project management.
+- **Subagent**: Specialized tools intended to be called by other agents to perform specific, narrow tasks.
+- **Both**: Versatile agents that can function as either a primary assistant or a delegated subagent depending on the context.
 
 ## Available Agents
 
-### 🏗️ Architecture & Planning
+### Architecture and Planning
 
 | Agent | Mode | Description |
-|-------|------|-------------|
-| **[System Architect](agents/architect.md)** | `Agent` | Principal architect for high-level system design, patterns, and technical strategy. |
-| **[Planner](agents/planner.md)** | `Agent` | Project lead that breaks down complex goals into actionable, dependency-aware plans. |
-| **[API Designer](agents/api-designer.md)** | `Agent` | REST & GraphQL architect that designs intuitive, consistent, and evolving APIs. |
+| :--- | :--- | :--- |
+| **[System Architect](agents/architect.md)** | Agent | Principal expert for high-level system design, architectural patterns, and long-term technical strategy. |
+| **[Planner](agents/planner.md)** | Agent | Lead strategist that breaks down complex project goals into manageable, actionable, and dependency-aware execution plans. |
+| **[API Designer](agents/api-designer.md)** | Agent | Specialist in designing intuitive, consistent, and scalable RESTful and GraphQL APIs following industry best practices. |
 
-### 🔍 Analysis & Exploration
-
-| Agent | Mode | Description |
-|-------|------|-------------|
-| **[Codebase Explorer](agents/codebase-explorer.md)** | `Both` | Navigator that maps project structure, entry points, and data flow in unfamiliar code. |
-| **[Debug](agents/debug.md)** | `Both` | Diagnostic specialist that systematically isolates and identifies bugs without guessing. |
-| **[Security Audit](agents/security-audit.md)** | `Subagent` | Security engineer that audits code for vulnerabilities (OWASP/CWE) and compliance. |
-| **[Perf Optimizer](agents/perf-optimizer.md)** | `Both` | Performance engineer that identifies bottlenecks and prescribes optimizations. |
-
-### 🛠️ Development & Maintenance
+### Analysis and Exploration
 
 | Agent | Mode | Description |
-|-------|------|-------------|
-| **[Refactor](agents/refactor.md)** | `Both` | Architect that improves code structure and maintainability without altering behavior. |
-| **[Test Writer](agents/test-writer.md)** | `Both` | QA specialist that writes comprehensive unit, integration, and E2E test suites. |
-| **[Docs Writer](agents/docs-writer.md)** | `Both` | Technical writer that creates clear, practical, and well-structured documentation. |
-| **[Dependency Manager](agents/dependency-manager.md)** | `Both` | Specialist for keeping dependencies healthy, secure, and up-to-date. |
+| :--- | :--- | :--- |
+| **[Codebase Explorer](agents/codebase-explorer.md)** | Both | Navigation expert that maps project structures, identifies key entry points, and understands data flow across unfamiliar codebases. |
+| **[Debug Specialist](agents/debug.md)** | Both | Diagnostic expert that uses systematic analysis to isolate, identify, and resolve complex bugs without trial and error. |
+| **[Security Auditor](agents/security-audit.md)** | Subagent | Security-focused engineer that audits codebases for vulnerabilities (OWASP/CWE) and ensures compliance with security standards. |
+| **[Performance Optimizer](agents/perf-optimizer.md)** | Both | Performance engineer dedicated to identifying performance bottlenecks and implementing efficient optimizations. |
 
-### 🧰 Specialized Skills
+### Development and Maintenance
 
 | Agent | Mode | Description |
-|-------|------|-------------|
-| **[Git Wizard](agents/git-wizard.md)** | `Both` | Version control expert for complex workflows, history rewriting, and recovery. |
-| **[SQL Expert](agents/sql-expert.md)** | `Both` | Database engineer for optimized query writing and schema design. |
-| **[Migrator](agents/migrator.md)** | `Subagent` | Specialist for safe database, API, and codebase migrations. |
-| **[Regex Master](agents/regex-master.md)** | `Subagent` | Expert at crafting, explaining, and optimizing regular expressions. |
-| **[Review](agents/review.md)** | `Subagent` | Senior engineer that conducts thorough code reviews for quality and correctness. |
+| :--- | :--- | :--- |
+| **[Refactoring Expert](agents/refactor.md)** | Both | Specialist in improving code structure, readability, and maintainability while ensuring original behavior remains intact. |
+| **[Test Writer](agents/test-writer.md)** | Both | QA automation expert focused on creating comprehensive test suites including unit, integration, and end-to-end tests. |
+| **[Documentation Writer](agents/docs-writer.md)** | Both | Technical writer who creates clear, practical, and well-structured documentation for developers and users. |
+| **[Dependency Manager](agents/dependency-manager.md)** | Both | Specialist in managing project dependencies, handling upgrades, auditing for security holes, and optimizing package footprints. |
+
+### Specialized Skills
+
+| Agent | Mode | Description |
+| :--- | :--- | :--- |
+| **[Git Wizard](agents/git-wizard.md)** | Both | Version control expert for managing complex Git workflows, history management, and repository recovery. |
+| **[SQL Expert](agents/sql-expert.md)** | Both | Database engineer specializing in writing optimized SQL queries, designing efficient schemas, and tuning database performance. |
+| **[Migration Specialist](agents/migrator.md)** | Subagent | Expert in managing safe migrations for database schemas, API versions, and large-scale codebase upgrades. |
+| **[Regex Master](agents/regex-master.md)** | Subagent | Specialist in crafting, explaining, and optimizing complex regular expression patterns for data processing and validation. |
+| **[Code Reviewer](agents/review.md)** | Subagent | Senior engineer that provides thorough code reviews, focusing on quality, correctness, and adherence to best practices. |
 
 ## Usage
 
-To use an agent in OpenCode, reference it by name:
+To utilize these agents within OpenCode, you can reference them by their name using the `@` symbol:
 
+```bash
+@planner Help me break down the task of migrating our authentication system.
+@debug Analyze why the login form is freezing during submission.
+@architect Specify a microservices architecture for this application.
+@sql-expert Optimize this query for the orders table.
 ```
-@planner Help me breakdown the task of migrating our auth system
-@debug Analyze why the login form is freezing
-@architect specificy a microservices architecture for this app
-```
+
+Each agent is configured with its own set of tools and permissions to ensure they can work effectively while maintaining system security. For more details on a specific agent, please refer to its individual documentation file in the `agents/` directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
