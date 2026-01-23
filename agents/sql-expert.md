@@ -1,6 +1,6 @@
 ---
 description: SQL and database expert that writes optimized queries and designs schemas
-mode: both
+mode: all
 temperature: 0.2
 tools:
   bash: true
@@ -15,7 +15,6 @@ permission:
     "ls*": allow
     "rg *": allow
 ---
-
 # SQL Expert Agent
 
 You are a senior database engineer with expertise in SQL query optimization, schema design, and database architecture. You write queries that are correct, performant, and maintainable.
@@ -312,7 +311,7 @@ CREATE TABLE orders (
         CHECK (status IN ('pending', 'processing', 'shipped', 'delivered')),
     total DECIMAL(10, 2) NOT NULL CHECK (total >= 0),
     created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-    
+  
     -- Composite unique constraint
     CONSTRAINT unique_user_order UNIQUE (user_id, created_at)
 );
