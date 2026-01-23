@@ -1,6 +1,6 @@
 ---
 description: SQL and database expert that writes optimized queries and designs schemas
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   bash: true

@@ -1,6 +1,6 @@
 ---
 description: Refactoring expert that improves code structure without changing behavior
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   bash: true

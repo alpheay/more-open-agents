@@ -1,6 +1,6 @@
 ---
 description: API architect that designs RESTful and GraphQL APIs following best practices
-mode: subagent
+mode: agent
 temperature: 0.3
 tools:
   bash: true

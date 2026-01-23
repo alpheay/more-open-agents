@@ -1,6 +1,6 @@
 ---
 description: Git expert that helps with complex version control operations and workflows
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   bash: true

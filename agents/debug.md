@@ -1,6 +1,6 @@
 ---
 description: Diagnostic specialist that investigates bugs using systematic analysis
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   write: false

@@ -1,6 +1,6 @@
 ---
 description: Performance optimization specialist that identifies and fixes bottlenecks
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   bash: true

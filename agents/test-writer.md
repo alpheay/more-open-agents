@@ -1,6 +1,6 @@
 ---
 description: Testing specialist that writes comprehensive unit, integration, and e2e tests
-mode: subagent
+mode: both
 temperature: 0.2
 tools:
   bash: true

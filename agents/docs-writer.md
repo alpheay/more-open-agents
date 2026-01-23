@@ -1,6 +1,6 @@
 ---
 description: Technical writer that creates clear, comprehensive documentation
-mode: subagent
+mode: both
 temperature: 0.3
 tools:
   bash: false
