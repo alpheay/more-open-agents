@@ -33,6 +33,7 @@ Agents within this repository operate in three distinct modes:
 
 | Agent | Mode | Description |
 | :--- | :--- | :--- |
+| **[Frontend Specialist](agents/frontend.md)** | Both | UI/UX expert for component architecture, state management, accessibility, styling, and frontend performance optimization. |
 | **[Refactoring Expert](agents/refactor.md)** | Both | Specialist in improving code structure, readability, and maintainability while ensuring original behavior remains intact. |
 | **[Test Writer](agents/test-writer.md)** | Both | QA automation expert focused on creating comprehensive test suites including unit, integration, and end-to-end tests. |
 | **[Documentation Writer](agents/docs-writer.md)** | Both | Technical writer who creates clear, practical, and well-structured documentation for developers and users. |
@@ -42,6 +43,7 @@ Agents within this repository operate in three distinct modes:
 
 | Agent | Mode | Description |
 | :--- | :--- | :--- |
+| **[AI/ML Specialist](agents/ai-ml.md)** | Both | Machine learning engineer for LLM integration, prompt engineering, RAG pipelines, model training, and MLOps. |
 | **[Git Wizard](agents/git-wizard.md)** | Both | Version control expert for managing complex Git workflows, history management, and repository recovery. |
 | **[SQL Expert](agents/sql-expert.md)** | Both | Database engineer specializing in writing optimized SQL queries, designing efficient schemas, and tuning database performance. |
 | **[Migration Specialist](agents/migrator.md)** | Subagent | Expert in managing safe migrations for database schemas, API versions, and large-scale codebase upgrades. |
