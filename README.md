@@ -26,6 +26,7 @@ Agents within this repository operate in three distinct modes:
 | :--- | :--- | :--- |
 | **[Codebase Explorer](agents/codebase-explorer.md)** | Both | Navigation expert that maps project structures, identifies key entry points, and understands data flow across unfamiliar codebases. |
 | **[Debug Specialist](agents/debug.md)** | Both | Diagnostic expert that uses systematic analysis to isolate, identify, and resolve complex bugs without trial and error. |
+| **[Debugger Agent](agents/debugger.md)** | Both | Diagnostic specialist that investigates bugs using systematic analysis. |
 | **[Security Auditor](agents/security-audit.md)** | Subagent | Security-focused engineer that audits codebases for vulnerabilities (OWASP/CWE) and ensures compliance with security standards. |
 | **[Performance Optimizer](agents/perf-optimizer.md)** | Both | Performance engineer dedicated to identifying performance bottlenecks and implementing efficient optimizations. |
 
