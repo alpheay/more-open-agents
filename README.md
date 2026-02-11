@@ -19,6 +19,7 @@ Agents within this repository operate in three distinct modes:
 | **[System Architect](agents/architect.md)** | Agent | Principal expert for high-level system design, architectural patterns, and long-term technical strategy. |
 | **[Planner](agents/planner.md)** | Agent | Lead strategist that breaks down complex project goals into manageable, actionable, and dependency-aware execution plans. |
 | **[API Designer](agents/api-designer.md)** | Agent | Specialist in designing intuitive, consistent, and scalable RESTful and GraphQL APIs following industry best practices. |
+| **[Agent Builder](agents/agent-builder.md)** | Agent | Specialist in designing, building, and refining high-quality OpenCode agent profiles with thoughtful prompt engineering. |
 
 ### Analysis and Exploration
 
