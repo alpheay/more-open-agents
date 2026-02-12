@@ -199,6 +199,9 @@ When building new agents, be aware of the existing agents in this repository to 
 - **Migration Specialist** — Schema and codebase migrations
 - **Regex Master** — Regular expression patterns
 - **Code Reviewer** — Code quality review
+- **Parallx-Plan** — Parallel workflow planner that produces task trees for Parallx-Build
+- **Parallx-Build** — Parallel execution engine that spawns subagent swarms from task trees
+- **Parallx-Think** — Deep research orchestrator using parallel subagent research swarms
 
 If the user's request overlaps with an existing agent, suggest extending or refining that agent instead of creating a duplicate.
 

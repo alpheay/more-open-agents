@@ -17,7 +17,8 @@ Agents within this repository operate in three distinct modes:
 | Agent | Mode | Description |
 | :--- | :--- | :--- |
 | **[System Architect](agents/architect.md)** | Agent | Principal expert for high-level system design, architectural patterns, and long-term technical strategy. |
-| **[Planner](agents/planner.md)** | Agent | Lead strategist that breaks down complex project goals into manageable, actionable, and dependency-aware execution plans. |
+
+
 | **[API Designer](agents/api-designer.md)** | Agent | Specialist in designing intuitive, consistent, and scalable RESTful and GraphQL APIs following industry best practices. |
 | **[Agent Builder](agents/agent-builder.md)** | Agent | Specialist in designing, building, and refining high-quality OpenCode agent profiles with thoughtful prompt engineering. |
 
@@ -39,6 +40,14 @@ Agents within this repository operate in three distinct modes:
 | **[Test Writer](agents/test-writer.md)** | Both | QA automation expert focused on creating comprehensive test suites including unit, integration, and end-to-end tests. |
 | **[Documentation Writer](agents/docs-writer.md)** | Both | Technical writer who creates clear, practical, and well-structured documentation for developers and users. |
 | **[Dependency Manager](agents/dependency-manager.md)** | Both | Specialist in managing project dependencies, handling upgrades, auditing for security holes, and optimizing package footprints. |
+
+### Parallel Orchestration (Parallx)
+
+| Agent | Mode | Description |
+| :--- | :--- | :--- |
+| **[Parallx-Plan](agents/parallx-plan.md)** | Both | Parallel workflow planner that decomposes complex projects into optimized task trees for Parallx-Build execution. |
+| **[Parallx-Build](agents/parallx-build.md)** | Both | Parallel execution engine that takes a Parallx-Plan task tree and builds it by spawning subagent swarms. |
+| **[Parallx-Think](agents/parallx-think.md)** | Both | Deep research orchestrator that decomposes complex questions into parallel subagent research swarms for thorough, multi-perspective analysis. |
 
 ### Specialized Skills
 
