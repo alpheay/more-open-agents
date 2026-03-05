@@ -36,6 +36,9 @@ Agents within this repository operate in three distinct modes:
 | Agent | Mode | Description |
 | :--- | :--- | :--- |
 | **[Frontend Specialist](agents/frontend.md)** | Both | UI/UX expert for component architecture, state management, accessibility, styling, and frontend performance optimization. |
+| **[Backend Specialist](agents/backend.md)** | Both | Backend development specialist for server-side logic, microservices, and databases. |
+| **[Mobile Specialist](agents/mobile.md)** | Both | Mobile development specialist for iOS, Android, and cross-platform applications. |
+| **[DevOps Specialist](agents/devops.md)** | Both | DevOps and SRE specialist for CI/CD pipelines, containerization, and infrastructure. |
 | **[Refactoring Expert](agents/refactor.md)** | Both | Specialist in improving code structure, readability, and maintainability while ensuring original behavior remains intact. |
 | **[Test Writer](agents/test-writer.md)** | Both | QA automation expert focused on creating comprehensive test suites including unit, integration, and end-to-end tests. |
 | **[Documentation Writer](agents/docs-writer.md)** | Both | Technical writer who creates clear, practical, and well-structured documentation for developers and users. |
